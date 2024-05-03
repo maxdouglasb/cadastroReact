@@ -1,11 +1,12 @@
 import React from "react";
 import People from './assets/people.svg'
+import Arrow from './assets/arrow.svg'
 
 import {
   H1,
   Container,
   Image,
-  ContainerItens,
+  ContainerItems,
   Input,
   InputLabel,
   Button,
@@ -15,13 +16,14 @@ const App = () => {
   return (
     <Container>
       <Image alt="logo-Img " src={People}/>
-      <ContainerItens/>
+      <ContainerItems>
       <H1>Hello!</H1>
       <InputLabel>Nome</InputLabel>
       <Input placeholder="Nome"/>
       <InputLabel>Idade</InputLabel>
       <Input placeholder="Idade"/>
-      <Button>Cadastrar</Button>
+      <Button>Cadastrar <img src={Arrow} alt="seta" /></Button>
+      </ContainerItems>
     </Container>
   );
 };
