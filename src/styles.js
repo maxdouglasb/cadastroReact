@@ -63,30 +63,57 @@ export const Input = styled.input `
   color: #fff;
 `;
 export const Button = styled.button `
+  width: 342px;
+  height: 74px;
+  border: none;
+  background: rgba(0, 0, 0, 0.8);
+  border-radius: 14px;
+  font-size: 17px;
+  line-height: 28px;
+  font-style: normal;
+  font-weight: bold;
+  cursor: pointer;
+  color: #fff;
 
-width: 342px;
-height: 74px;
-border: none;
-background: rgba(0, 0, 0, 0.8);
-border-radius: 14px;
-font-size: 17px ;
-line-height: 28px;
-font-style:normal ;
-font-weight: bold;
-cursor: pointer;
-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
 
-display: flex;
-align-items: center;
-justify-content: center;
-gap: 20px;
-
-&:hover{
+  &:hover {
     opacity: 0.8;
-}
-&:active{
+  }
+  &:active {
     opacity: 0.6;
-}
+  }
+`;
 
+export const User = styled.li `
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  
 
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  background: rgba(255, 255, 255, 0.25);
+  border-radius: 14px;
+  border: none;
+  width: 342px;
+  height: 58px;
+  outline: none;
+  margin-top: 20px;
+
+  p {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 28px;
+    color: #fff;
+  }
+  button{
+    background: none;
+    border: none;
+    cursor: pointer;
+
+  }
 `;
